@@ -2,20 +2,41 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@font-face {
+  font-family: 'RedHatText';
+  src: url('/assets/fonts/static/RedHatText-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --Red: 14, 86%, 42%;
+    --Green: 159deg, 69%, 38%;
+    --Rose-50: ;
+    --Rose-100: 13deg, 31%, 94%;
+    --Rose-300: 14deg, 25%, 72%;
+    --Rose-400: 7deg, 20%, 60%;
+    --Rose-500: 12deg, 20%, 44%;
+    --Rose-900: 14deg, 65%, 9%;
   }
+
 }
+
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'RedHatText', sans-serif;
+  background-color: hsl(13deg, 31%, 94%);
 }
+
+/* span {
+  color: hsl(14, 86%, 42%);
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+p {
+  color: hsl(12, 20%, 44%);
+} */
